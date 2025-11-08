@@ -1,17 +1,11 @@
 :root {
-    /* --clr-bg-primary: #E1F1FE #2e1b5b;
-    --clr-bg-secondary:#F3B2F4;
-    --clr-bg-terciary: #9E61E3;
-    --clr-text-primary: #215783;
-    --clr-text-secondary: #7D3EA9;
-    --clr-text-accent: #3DE0FC;*/
-
     --clr-bg-primary: #3e048c;
     --clr-bg-secondary: #7a37e6;
     --clr-bg-terciary: #e477cc;
     --clr-text-primary: aqua;
     --clr-text-secondary: #F5F5F5;
-
+    --clr-bg-nav : #E81DB6;
+}
 
     * {
         margin: 0;
@@ -80,8 +74,8 @@
     }
 
     .navegation-bar a:hover {
-        background-color: #E81DB6;
-        color: aqua;
+        background-color: var(--clr-bg-nav);
+        color: var(--clr-text-primary);
 
     }
 
