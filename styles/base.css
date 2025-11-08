@@ -41,7 +41,7 @@
     .top-title {
         display: block;
         background-color: var(--clr-bg-primary);
-        color: var(--clr-text-accent);
+        color: var(--clr-text-primary);
         padding: 1.5rem;
     }
 
