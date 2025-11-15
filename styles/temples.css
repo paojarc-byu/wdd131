@@ -92,7 +92,7 @@ h2.show {
     font-weight: 700;
     text-decoration: none;
     padding: .5rem .75rem;
-    background-color: var(--clr-bg-tertiary);
+    background-color: var(--clr-bg-primary);
     color: var(--clr-text-primary);
     text-align: right;
     position: absolute;
