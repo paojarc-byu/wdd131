@@ -5,7 +5,7 @@ document.getElementById("lastModified").innerHTML = "Last modification: " + docu
 
 const hamButton = document.querySelector("#menu");
 const navItems = document.querySelector("nav ul");
-const title = document.querySelector("h1");
+const title = document.querySelector("h2");
 const navContainer = document.querySelector(".nav-cont");
 
 hamButton.addEventListener("click", () => {
