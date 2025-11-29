@@ -1,0 +1,156 @@
+:root {
+    --clr-bg-primary: #116b86;
+    --clr-bg-secondary: #b4f4f8;
+    --clr-text-primary: #F5F5F5;
+    --clr-text-secondary: #116b86;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+ 
+body {
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: .7rem;
+    text-align: center;
+}
+
+
+header{
+    background-color: var(--clr-bg-primary);
+    color: var(--clr-text-primary);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.nav-cont {
+    display: flex;
+    background-color: var(--clr-bg-primary);
+}
+
+.nav-cont.show {
+    flex-direction: column;
+}
+
+.navigation-bar a {
+    color: var(--clr-text-primary);
+    text-align: center;
+}
+
+.navigation-bar a:hover {
+    background-color: var(--clr-bg-secondary);
+    color: var(--clr-text-secondary);
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    list-style: none;
+    height: 100%;
+}
+
+nav li {
+    list-style: none;
+    flex: 1;
+    height: 100%;
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.3rem;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: left;
+    padding: 1rem;
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h2.show {
+    display: none;
+}
+
+#menu {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: var(--clr-bg-primary);
+    color: var(--clr-text-primary);
+    text-align: right;
+    position: absolute;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+.show li {
+    display: block;
+}
+
+main {
+    color: var(--clr-text-secondary);
+    max-width: 800px;
+    margin: 1rem auto;
+}
+
+#main {
+    color: var(--clr-text-secondary);
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+
+
+.temple-img {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+}
+
+
+.temple-img img {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
+    height: auto;
+    border: 1px solid rgb(13, 45, 53);
+    box-shadow: 0 0 10px #333;
+}
+
+
+footer {
+    background-color: var(--clr-bg-primary);
+    color: var(--clr-text-primary);
+    padding: 1rem;
+    font-size: 1rem;
+}
