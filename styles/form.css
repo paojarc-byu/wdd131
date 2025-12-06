@@ -108,7 +108,7 @@ select:focus,
 textarea:focus {
     outline: 2px solid var(--primary);
     outline-offset: 1px;
-    background-color: #ffffff;
+    background-color: #f9fafb;
 }
 
 fieldset.form-group {
@@ -162,7 +162,7 @@ input[type="submit"] {
     padding: 0.65rem 1.4rem;
     border-radius: 980px;
     background-color: var(--primary);
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
@@ -217,7 +217,7 @@ input[type="submit"]:focus {
 
 .site-footer {
     background-color: var(--primary);
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 1rem;
     font-size: .8rem;
