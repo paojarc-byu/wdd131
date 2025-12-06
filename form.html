@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 | Product review form">
+    <meta name="author" content="Paola Jarquin Cervantes">
+    <title>Product Review Form</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/form.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <h1>Product Review</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-card" aria-labelledby="review-heading">
+            <h2 id="review-heading">Leave a Product Review</h2>
+            <form action="review.html" method="get" class="review-form">
+                <div class="form-group">
+                    <label for="product">Product Name *</label>
+                    <select id="product" name="product" required>
+                        <option value="" disabled selected>Select a product...</option>
+                    </select>
+                </div>
+                <fieldset class="form-group">
+                    <legend>Overall Rating <span class="required">*</span></legend>
+                    <div class="rating-group">
+                        <label for="rate1"><input type="radio" id="rate1" name="rating" value="1" required> 1 ★</label>
+
+                        <label for="rate2"><input type="radio" id="rate2" name="rating" value="2" required> 2 ★★</label>
+
+                        <label for="rate3"><input type="radio" id="rate3" name="rating" value="3" required> 3
+                            ★★★</label>
+
+                        <label for="rate4"><input type="radio" id="rate4" name="rating" value="4" required> 4
+                            ★★★★</label>
+
+                        <label for="rate5"><input type="radio" id="rate5" name="rating" value="5" required> 5
+                            ★★★★★</label>
+                    </div>
+
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="installDate">Date of Installation <span class="required">*</span></label>
+                    <input type="date" id="installDate" name="installDate" required />
+                </div>
+
+                <fieldset class="form-group">
+                    <legend>Useful Features (check all that apply)</legend>
+                    <div class="features-group">
+
+                        <label for="feat1">
+                            <input type="checkbox" id="feat1" name="features" value="durability">
+                            Durability
+                        </label>
+
+                        <label for="feat2">
+                            <input type="checkbox" id="feat2" name="features" value="performance">
+                            Performance
+                        </label>
+
+                        <label for="feat3">
+                            <input type="checkbox" id="feat3" name="features" value="value">
+                            Value for Money
+                        </label>
+
+                        <label for="feat4">
+                            <input type="checkbox" id="feat4" name="features" value="ease">
+                            Ease of Use
+                        </label>
+
+                        <label for="feat5">
+                            <input type="checkbox" id="feat5" name="features" value="design">
+                            Design
+                        </label>
+
+                    </div>
+
+                </fieldset>
+                <div class="form-group">
+                    <label for="reviewText">Written Review (optional)</label>
+                    <textarea id="reviewText" name="reviewText" rows="4"
+                        placeholder="Share your comments about this product..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="userName">Your Name (optional)</label>
+                    <input type="text" id="userName" name="userName" placeholder="Enter your name" />
+                </div>
+                <div class="form-actions">
+                    <input type="submit" value="Submit Review" />
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>&copy; <span id="currentYear"></span> Paola Jarquin | WDD 131</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
