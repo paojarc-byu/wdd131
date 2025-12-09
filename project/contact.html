@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Availability | Casa Postal</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo-area">
+            <a href="index.html" class="logo-text">Casa Postal</a>
+            <p class="logo-subtitle">Cozy Apartments in Oaxaca</p>
+        </div>
+
+        <button id="menu-toggle"></button>
+
+        <nav class="main-nav">
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Apartments</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Contact & Availability</h1>
+            <p>Let us know your travel dates and apartment needs. We’ll get back to you as soon as possible.</p>
+        </section>
+
+        <section class="section contact-section">
+            <div>
+                <h2>Our Location</h2>
+                <p><strong>Address:</strong> Colón 1115, Centro, 68115 Oaxaca de Juárez, Oax.</p>
+
+                <iframe src="https://www.google.com/maps?q=Colón+1115+Centro+Oaxaca&output=embed" width="100%"
+                    height="300" style="border:0; border-radius:12px;" allowfullscreen="">
+                </iframe>
+
+                <h2 style="margin-top:1.5rem;">Contact Information</h2>
+                <p><strong>Phone / WhatsApp:</strong> +52 951 109 8908</p>
+                <p><strong>Email:</strong> casapostal@gmail.com</p>
+            </div>
+
+            <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input id="name" name="name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <input id="guests" name="guests" type="number" min="1" max="10" required />
+                </div>
+
+                <div class="dates-group">
+                    <div>
+                        <label for="arrival">Arrival Date</label>
+                        <input id="arrival" name="arrival" type="date" required />
+                    </div>
+
+                    <div>
+                        <label for="departure">Departure Date</label>
+                        <input id="departure" name="departure" type="date" required />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Type of Stay</label>
+                    <select id="type" name="type" required>
+                        <option value="">Choose one</option>
+                        <option value="loft">Warm Loft</option>
+                        <option value="two-bedroom">Two-Bedroom Apartment</option>
+                        <option value="large">Large Family Apartment</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn primary-btn">Send Request</button>
+                <p id="form-feedback"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> Casa Postal — Oaxaca, Mexico</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+
+
+</body>
+
+</html>

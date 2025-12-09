@@ -8,7 +8,7 @@ const apartments = [
         description: "A cozy and inviting loft, perfect for couples or solo travelers. Includes Wi-Fi, kitchenette, Netflix, and parking.",
         capacity: 2,
         price: 750,
-        images: ["loft1.jpg", "loft2.jpg", "loft3.jpg", "loft4.jpg"]
+        images: ["images/loft1.jpg", "images/loft2.jpg", "images/loft3.jpg", "images/loft4.jpg"]
     },
 
     {
@@ -18,7 +18,7 @@ const apartments = [
         description: "A comfortable two-bedroom apartment ideal for families. Comes with Wi-Fi, kitchenette, Netflix, and parking.",
         capacity: 6,
         price: 1200,
-        images: ["two1.jpg", "two2.jpg", "two3.jpg", "two4.jpg"]
+        images: ["images/two1.jpg", "images/two2.jpg", "images/two3.jpg", "images/two4.jpg"]
     },
 
     {
@@ -28,7 +28,7 @@ const apartments = [
         description: "Spacious apartment for large families or groups. Includes Wi-Fi, kitchenette, Netflix, and parking.",
         capacity: 10,
         price: 1800,
-        images: ["large1.jpg", "large2.jpg", "large3.jpg", "large4.jpg"]
+        images: ["images/large1.jpg", "images/large2.jpg", "images/large3.jpg", "images/large4.jpg"]
     }
 
 ];
@@ -188,3 +188,22 @@ document.addEventListener("DOMContentLoaded", () => {
     setupContactForm();
     setupFooter();
 });
+
+/* ===== MOBILE NAV MENU — Based on your preferred style ===== */
+
+const hamButton = document.querySelector("#menu-toggle");
+const navItems = document.querySelector(".main-nav");
+
+hamButton.addEventListener("click", () => {
+    hamButton.classList.toggle("show");
+    navItems.classList.toggle("open");
+});
+
+/* Auto-close menu when resizing to desktop */
+window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768) {
+        hamButton.classList.remove("show");
+        navItems.classList.remove("open");
+    }
+});
+

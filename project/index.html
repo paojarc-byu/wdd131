@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Postal — Cozy Apartments in Oaxaca</title>
+    <meta name="description"
+        content="Casa Postal offers cozy and fully equipped apartments in Oaxaca, perfect for couples, families, and large groups. All units include Wi-Fi, kitchenette, parking, and Netflix." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo-area">
+            <a href="index.html" class="logo-text">Casa Postal</a>
+            <p class="logo-subtitle">Cozy Apartments in Oaxaca</p>
+        </div>
+
+        <button id="menu-toggle" aria-label="Open navigation menu"></button>
+
+        <nav class="main-nav">
+            <ul id="nav-list">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="rooms.html">Apartments</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Feel at Home in Oaxaca</h1>
+                <p>
+                    Casa Postal welcomes you with warm, cozy, and fully equipped apartments where you can relax and
+                    enjoy your stay.
+                    Whether you're visiting for a weekend or traveling with family, our spaces are designed to help you
+                    feel right at home.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="rooms.html" class="btn primary-btn">View Apartments</a>
+                    <a href="contact.html" class="btn secondary-btn">Check Availability</a>
+                </div>
+            </div>
+
+            <figure class="hero-image">
+                <img src="images/casa-postal-facade.jpg" alt="Casa Postal facade in Oaxaca" loading="lazy"
+                    class="lazy-img">
+            </figure>
+        </section>
+
+        <!-- AMENITIES -->
+        <section class="section">
+            <h2>Amenities Included</h2>
+            <div class="grid-3">
+                <article class="card">
+                    <h3>Free Wi-Fi</h3>
+                    <p>High-speed internet available in every apartment.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Kitchenette</h3>
+                    <p>All units include a fully equipped kitchenette.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Smart TV with Netflix</h3>
+                    <p>Enjoy your favorite shows during your stay.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Parking Available</h3>
+                    <p>Safe and convenient on-site parking.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- FEATURED APARTMENTS (slider per category) -->
+        <section class="section" aria-labelledby="featured">
+            <h2 id="featured">Featured Apartments</h2>
+            <p class="section-subtitle">Discover our cozy loft and spacious family apartments.</p>
+
+            <div id="featured-apartments" class="cards-grid"></div>
+
+            <p class="favorite-info">You have <span id="favorite-count">0</span> saved favorites.</p>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> Casa Postal — Oaxaca, Mexico</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
