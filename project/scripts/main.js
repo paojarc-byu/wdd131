@@ -207,3 +207,20 @@ window.addEventListener("resize", () => {
     }
 });
 
+
+/* ===== Lazy Image Fade-in Observer ===== */
+
+const lazyImages = document.querySelectorAll(".lazy-img");
+
+const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            obs.unobserve(entry.target); // Only animate once
+        }
+    });
+}, {
+    threshold: 0.1
+});
+
+lazyImages.forEach(img => observer.observe(img));
